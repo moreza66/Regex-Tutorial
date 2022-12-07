@@ -4,7 +4,9 @@ Regular expressions can be used to find certain patterns of characters within a 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This tutorial will cover a step by step deconstruction of a regex that matches a valid email address.
+
+The regex expression we will be decoding is /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
