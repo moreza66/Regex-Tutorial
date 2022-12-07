@@ -21,6 +21,8 @@ The regex expression we will be decoding is /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a
 
 ## Regex Components
 
+Regular expressions are patterns used to match character combinations in strings. Please see below components used for this regex expression to match an email address.
+
 ### Anchors
 
 ### Quantifiers
