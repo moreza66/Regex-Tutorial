@@ -93,12 +93,16 @@ Is a way to tell the regex expression how many characters you want to match. In 
 
 /^([a-z0-9_\.-]+) --> We will match one character token or group.
 
-### Boundaries
+### Final Test
 
-### Back-references
-
-### Look-ahead and Look-behind
+Test performed @ https://regexr.com/
+![](./Assets/Images/Screen%20Shot%20%231.jpg)
+![](./Assets/Images/Screen%20Shot%20%232.jpg)
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Tutorial created by Mohammad Memar.
+
+Gist link --> https://github.com/moreza66/Regex-Tutorial
+
+GitHub profile --> https://github.com/moreza66
