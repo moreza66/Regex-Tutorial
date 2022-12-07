@@ -85,6 +85,8 @@ That is to group two regular expressions. One will target before the @, and the 
 
 ### Bracket Expressions
 
+In our example /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, we have [] square brackets, these are used to match different types of strings in order to match what you are looking for.
+
 ### Greedy and Lazy Match
 
 ### Boundaries
