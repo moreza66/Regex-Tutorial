@@ -77,9 +77,11 @@ Full example
 
 test1_ab.--@gmail.com test123_ab--.@hotmail.com
 
-### Flags
-
 ### Grouping and Capturing
+
+In our example /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, we have () parentheses used to group two sections. That is before @ and after.
+
+That is to group two regular expressions. One will target before the @, and the other after to match the email address format.
 
 ### Bracket Expressions
 
