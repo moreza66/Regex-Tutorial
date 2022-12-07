@@ -25,6 +25,14 @@ Regular expressions are patterns used to match character combinations in strings
 
 ### Anchors
 
+Anchors match a position before or after characters.
+
+^ – The caret anchor matches the beginning of the text. $ – The dollar anchor matches the end of the text.
+
+In our example /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, we have two anchors ^ and $, meaning where to start a matching pattern and when to end it.
+
+You can see the / slash at the beginning and at the end of our regex expression. Meaning it starts at /^ (beginning) and ends at $/.
+
 ### Quantifiers
 
 ### OR Operator
