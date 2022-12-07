@@ -35,6 +35,18 @@ You can see the / slash at the beginning and at the end of our regex expression.
 
 ### Quantifiers
 
+In our example /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, we specify how many instances of a character, group, or character class must be present in the string matched.
+
+In the case of the left side of the @: /^([a-z0-9_\.-]+)
+
+We will match one string as dictated by the + sign before the last parentheses.
+
+In the case of the right side of the @: ([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+We will match one string as dictated by the + sign before the escaped period .
+
+{2,6} --> matches between 2 and 6 of the preceding token ([a-z\.])
+
 ### OR Operator
 
 ### Character Classes
