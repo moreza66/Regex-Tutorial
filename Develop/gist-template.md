@@ -1,6 +1,6 @@
-# Title (replace with your title)
+# Regex Tutorial on Matching an Email
 
-Introductory paragraph (replace this with your text)
+Regular expressions can be used to find certain patterns of characters within a string. You can also find and replace a character or sequence of characters within a string. They are also frequently used to validate input. This regex matches character information for valid e-mail addresses.
 
 ## Summary
 
