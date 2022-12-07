@@ -47,9 +47,35 @@ We will match one string as dictated by the + sign before the escaped period .
 
 {2,6} --> matches between 2 and 6 of the preceding token ([a-z\.])
 
-### OR Operator
-
 ### Character Classes
+
+In our example /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, we have [] square brackets, these are used to match different types of strings in order to match what you are looking for.
+
+In this case let's divide the expression in two sections, before and after @.
+
+Left side of the @: [a-z0-9_\.-]+
+
+a-z --> match and lowercase character from a-z 0-9 --> match any characters from 0-9 _ --> allow the usage of _ (underscore character) in the matching. . --> escape character for the . character.
+
+--> We will match one string as dictated by the + sign before the last parentheses.
+--> allow the usage of - (minus symbol) in the matching
+Right side of the @: [\da-z\.-\.-]+)\.([a-z\.]{2,6})$/
+
+\da-z\.-\.-]+) or before .com scenarios for matching.
+
+\d --> match any digit character from 0-9 a-z --> match any character from a-z lowercase (case sensitive) . --> escape character for the . character.
+
+--> allow the usage of - (minus symbol) in the matching
+--> We will match one string as dictated by the + sign before the last parentheses.
+\.([a-z\.]{2,6})$/ or the .com scenarios for matching.
+
+. --> escape character for the . character. a-z --> match any character from a-z lowercase (case sensitive) . --> escape character for the . character. {2-6} --> matches between 2 and 6 (min 2 and max of 6) of the preceding token ([a-z\.]) $ --> matched at the end of the string. It means that the .com or .ca etc has to be at the end of the email address string.
+
+e.g (right of the @) --> @gmail.ca or hotmail.com
+
+Full example
+
+test1_ab.--@gmail.com test123_ab--.@hotmail.com
 
 ### Flags
 
